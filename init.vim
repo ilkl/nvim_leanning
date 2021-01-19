@@ -1,7 +1,7 @@
 " ===
 " === Auto load for first time uses
 " ===
-if empty(glob('~/.vim/plugged'))
+if empty(glob('~/.config/nvim/plugged'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
@@ -34,7 +34,7 @@ inoremap jj <Esc>l
 noremap <c-r> :source $MYVIMRC<CR>
 
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
      Plug 'vim-airline/vim-airline'
      Plug 'morhetz/gruvbox'
      Plug 'connorholyday/vim-snazzy'
